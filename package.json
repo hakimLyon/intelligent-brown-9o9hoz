@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "name": "templateforv2-remix",
+  "description": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@remix-run/node": "^1.10.1",
+    "@remix-run/react": "^1.10.1",
+    "@remix-run/serve": "^1.10.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@remix-run/server-runtime": "^1.10.1",
+    "cross-env": "^7.0.3"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^1.10.1",
+    "@remix-run/eslint-config": "^1.10.1",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.10",
+    "typescript": "^4.9.4"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "postinstall": "remix setup node",
+    "build": "cross-env NODE_ENV=production remix build",
+    "dev": "cross-env NODE_ENV=development remix dev",
+    "start": "cross-env NODE_ENV=production remix-serve build"
+  },
+  "keywords": []
+}
